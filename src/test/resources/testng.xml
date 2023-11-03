@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OpenCart Automation Suite">
+	<listeners>
+		<listener class-name="com.qa.openCart.listeners.ExtentReportListener" />
+	</listeners>
+	<test thread-count="5" name="OpenCart Test Cases">
+		<classes>
+			<class name="com.qa.openCart.testCases.RegisterTest" />
+			<class name="com.qa.openCart.testCases.LoginTest" />
+			<class name="com.qa.openCart.testCases.SearchTest" />
+		</classes>
+	</test>
+</suite>
